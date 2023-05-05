@@ -7,7 +7,7 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-@app.route('/generate_lyric', methods=['POST'])
+@app.route('/generate_lyric', methods=['POST', 'GET'])
 def generate_lyric():
     name = request.form['name']
     lyrics = ["I don't know about you, but I'm feeling 22.",
