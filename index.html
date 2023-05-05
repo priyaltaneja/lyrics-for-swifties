@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>swift lyrics</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display">
+  </head>
+  <body>
+    <div class="container">
+      <h1>what taylor swift lyric are you? 💌</h1>
+      <form class="lyric-form" action="/generate_lyric" method="POST">
+        <label for="name" class="name">enter your name to find out:</label>
+        <input type="text" id="name" name="name">
+        <input type="submit" value="find my swift lyric!">
+      </form>
+    </div>
+  </body>
+</html>
