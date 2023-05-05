@@ -37,7 +37,7 @@ def generate_lyric():
               "All you are is mean, and a liar, and pathetic, and alone in life.",
               "I'm shining like fireworks over your sad empty town."]
     lyric = random.choice(lyrics)
-    return render_template('lyric.html', name=name, lyric=lyric)
+    return render_template('templates/lyrics.html', css_url='/static/styles.css', name=name, lyric=lyric)
 
 if __name__ == '__main__':
     app.run(debug=True)
